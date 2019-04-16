@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Image Gallery</title>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+  <style type="text/css">
+  body { 
+    padding-top: 70px; 
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .jumbotron {
+    color: #305171;
+    background: #ecf0f1;
+    cursor: default;
+  }
+  .navbar-inverse {
+    background: #305171;
+    color: #FFFFFF;
+  }
+  .navbar-inverse .navbar-brand, .navbar-inverse a{
+    color: #FFFFFF;
+  }
+  .navbar-inverse .navbar-nav>li>a {
+    color: #FFFFFF;
+  } 
+  .navbar-inverse .navbar-toggle {
+    border-color: #fff;
+	}
+	img:hover{
+		transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	}
+	h6 {
+		text-align: center;
+		color: #305171;
+		padding-bottom: 5px;
+    margin-top: 50px;
+	}
+
+  #showMore {
+    display: none;
+  }
+  #showMoreBtn {
+    background: #305171;
+    color: #FFFFFF;
+    padding: 10px 20px;
+  }
+}
+  </style>
+
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	      		 </button>
+				<a href="#" class="navbar-brand"><span class="fa fa-camera-retro"></span> MYGL</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Login   <i class="fa fa-user"></i></a></li>
+					<li><a href="#">Sign Up  <i class="fa fa-user-plus"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+  <div class="container">
+  
+  <!-- Banner -->
+  <div class="jumbotron">
+    <h1><i class="fa fa-camera-retro"></i></span> My Image Gallery </h1>
+    <p>A bunch of beautiful pictures from different photographers</p> 
+  </div>
+
+  <!-- Pictures -->
+    <div class="row">
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1475319122043-5ca9eeceefaf?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1517933029403-91a9781f7d77?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534655264564-1728673f2678?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534874455018-e108cd15ec65?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+      	</div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534271057238-c2c170a76672?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534265084078-f9fc03b3f725?80dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534955788645-78f6111c7627?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+
+    <div id="showMore">
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534957753291-64d667ce2927?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534882039189-c85b94bf55ee?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534824681605-7eb16e0d2315?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534702479988-e8dd5af54474?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534743241803-9f1acecd0dec?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534719101791-4e5d94aa9a5c?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534711429713-aeeeff724f23?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534688711736-b7a8dc24a936?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534599149175-c31133179de3?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534630634849-2834ab92d601?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534668624111-77526ec7b99f?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div>  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+          <img src="https://images.unsplash.com/photo-1534655453976-d81e6f35e617?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+        </div>
+      </div> 
+
+    </div>
+
+    <div class="text-center">
+    <button type="button" id="showMoreBtn" class="btn btn-secondary">Show more</button>
+  	</div>
+
+  </div>
+
+ 	<!-- Copyright -->
+	<footer><h6> Copyright &copy; 2017 - Rafaela Silveira. All rights reserved</h6></footer>
+
+<script type="text/javascript" src="gallery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
